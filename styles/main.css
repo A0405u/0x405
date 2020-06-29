@@ -1,18 +1,61 @@
-html {
-    height: 100%;
+*
+{
+    margin: 0;
+}
+
+@font-face {
+    font-family: IBMVGA8;
+    src: url(../fonts/ibm_vga8.eot);
+    src: url(../fonts/ibm_vga8.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/ibm_vga8.woff2) format('woff2'),
+         url(../fonts/ibm_vga8.woff) format('woff'),
+         url(../fonts/ibm_vga8.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
+
+html
+{
+    height: 100%;
+}
 
 body
 {
     min-height: 100%;
+    background: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
 }
 
 main
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    color: white;
+}
+
+h1, p
+{
+    color: white;
+    background: black;
+    font-family: "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-stretch: normal;
+}
+
+h1
+{
+    font-size: 32pt;
+    margin: 16pt;
+}
+
+p
+{
+    font-size: 16pt;
 }
