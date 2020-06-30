@@ -1,8 +1,3 @@
-*
-{
-    margin: 0;
-}
-
 @font-face {
     font-family: IBMVGA8;
     src: url(../fonts/ibm_vga8.eot);
@@ -14,48 +9,92 @@
     font-style: normal;
   }
 
+:root
+{
+    --bg: blue;
+    --fg: white;
+}
+
+*
+{
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+}
+
 html
 {
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 body
 {
     min-height: 100%;
-    background: blue;
+    width: 480pt;
+    background: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+header
+{
+    width: 100%;
+}
+
 main
 {
+    line-height: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    color: white;
+    color: var(--fg);
 }
 
 h1, p
 {
-    color: white;
-    background: black;
-    font-family: "Lucida Console", Monaco, monospace;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-stretch: normal;
+    width: 100%;
 }
 
 h1
 {
-    font-size: 32pt;
-    margin: 16pt;
+    color: var(--bg);
+    background-color: var(--fg);
+    font-size: 24pt;
+    text-align: center;
 }
 
 p
 {
-    font-size: 16pt;
+    color: var(--fg);
+    font-size: 12pt;
+    margin: 24pt;
+    font-style: italic;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.links
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--fg);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover
+{
+    background: var(--fg);
+    color: var(--bg);
 }
