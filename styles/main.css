@@ -18,7 +18,7 @@
 *
 {
     margin: 0;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Lucida Console", Monaco, monospace
 }
 
 html
@@ -30,6 +30,7 @@ html
 
 body
 {
+    line-height: 1;
     min-height: 100%;
     width: 480pt;
     background: var(--bg);
@@ -46,7 +47,6 @@ header
 
 main
 {
-    line-height: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
