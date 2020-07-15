@@ -1,18 +1,9 @@
-@font-face {
-    font-family: IBMVGA8;
-    src: url(../fonts/ibm_vga8.eot);
-    src: url(../fonts/ibm_vga8.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/ibm_vga8.woff2) format('woff2'),
-         url(../fonts/ibm_vga8.woff) format('woff'),
-         url(../fonts/ibm_vga8.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
 :root
 {
     --bg: blue;
     --fg: white;
+    --light: white;
+    --dark: blue;
 }
 
 *
@@ -38,6 +29,38 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.upper, .lower
+{
+    flex: 1;
+}
+
+.upper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#moon
+{
+    stroke-width: 0
+}
+
+#moonbg
+{
+    fill: var(--dark); 
+  }
+
+#moonfg
+{
+    fill: var(--light);
+}
+
+#moonphase
+{
+    fill: var(--light);
 }
 
 header

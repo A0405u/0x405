@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0x405</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="scripts/color.js"></script> 
+    <script src="scripts/suncalc.js"></script> 
+    <script src="scripts/main.js"></script> 
 </head>
-<body onload="color()"> 
+<body onload="init()">
+    <div class = upper>
+        <svg id = moon width="100pt" height="100pt" transform = "rotate(0)" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <clipPath id = moonhalf >
+                    <rect x = "0pt" width = "50pt" height = "100pt"/>
+                </clipPath>
+            </defs>
+            <circle id = moonbg cx = "50pt" cy = "50pt" r = "50pt"/>
+            <circle id = moonfg cx = "50pt" cy = "50pt" r = "45pt" clip-path = "url(#moonhalf)"/>
+            <ellipse id = moonphase cx = "50pt" cy = "50pt" rx = "25pt" ry = "45pt" />
+        </svg>
+    </div>
     <header>
         <h1>0 X 4 0 5</h1>      
     </header>
@@ -26,5 +39,8 @@
             <a href = "https://t.me/pb0x405">Т Г</a>
         </div>
     </main>
+    <div class = lower>
+         
+    </div>
 </body>
 </html>
