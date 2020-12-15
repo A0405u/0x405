@@ -24,16 +24,18 @@ function moon()
     date = new Date();
 
     moon = SunCalc.getMoonIllumination(date);
+
+    moon.fraction = 0.1
     
     if(moon.phase < 0.25) // новая луна -> первая четверть
     {
-        document.getElementById("moonhalf").children[0].setAttribute("x", "50pt");
+        document.getElementById("moonhalf").children[0].setAttribute("x", "60pt");
         document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(18 * (0.5 - moon.fraction))) * 5  + "pt");
         document.getElementById("moonphase").style.setProperty('fill', "var(--dark)");
     }
     else if(moon.phase < 0.5) // первая четверть -> полная луна
     {
-        document.getElementById("moonhalf").children[0].setAttribute("x", "50pt");
+        document.getElementById("moonhalf").children[0].setAttribute("x", "60pt");
         document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(18 * (moon.fraction - 0.5))) * 5  + "pt");
         document.getElementById("moonphase").style.setProperty('fill', "var(--light)");
     }
