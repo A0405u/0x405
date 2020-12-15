@@ -24,8 +24,6 @@ function moon()
     date = new Date();
 
     moon = SunCalc.getMoonIllumination(date);
-
-    moon.fraction = 0.1
     
     if(moon.phase < 0.25) // новая луна -> первая четверть
     {
