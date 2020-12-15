@@ -28,25 +28,25 @@ function moon()
     if(moon.phase < 0.25) // новая луна -> первая четверть
     {
         document.getElementById("moonhalf").children[0].setAttribute("x", "50pt");
-        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(90 * (0.5 - moon.fraction))) / 5 * 5  + "pt");
+        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(18 * (0.5 - moon.fraction))) * 5  + "pt");
         document.getElementById("moonphase").style.setProperty('fill', "var(--dark)");
     }
     else if(moon.phase < 0.5) // первая четверть -> полная луна
     {
         document.getElementById("moonhalf").children[0].setAttribute("x", "50pt");
-        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(90 * (moon.fraction - 0.5))) / 5 * 5  + "pt");
+        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(18 * (moon.fraction - 0.5))) * 5  + "pt");
         document.getElementById("moonphase").style.setProperty('fill', "var(--light)");
     }
     else if(moon.phase < 0.75) // первая четверть -> полная луна
     {
         document.getElementById("moonhalf").children[0].setAttribute("x", "0pt");
-        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(90 * (moon.fraction - 0.5))) / 5 * 5  + "pt");
+        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(18 * (moon.fraction - 0.5))) * 5  + "pt");
         document.getElementById("moonphase").style.setProperty('fill', "var(--light)");
     }
     else if(moon.phase < 1) // первая четверть -> полная луна
     {
         document.getElementById("moonhalf").children[0].setAttribute("x", "0pt");
-        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(90 * (0.5 - moon.fraction))) / 5 * 5  + "pt");
+        document.getElementById("moonphase").setAttribute("rx", parseInt(Math.round(18 * (0.5 - moon.fraction))) * 5  + "pt");
         document.getElementById("moonphase").style.setProperty('fill', "var(--dark)");
     }
 
