@@ -124,7 +124,7 @@ a:hover
 }
 
 @media screen and (orientation: portrait) {
-    header {
+    /* header {
       margin-top: 20pt;
     }
     
@@ -133,5 +133,8 @@ a:hover
     }
     svg {
       margin-top: 20pt;
+    } */
+    svg {
+        display: none;
     }
   }
